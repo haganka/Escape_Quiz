@@ -15,176 +15,18 @@
 
 <body>
     <div class="container">
-        <div class="row">
-            <div class="header">
-                <h1>Welcome to Friend Finder</h1>
-            </div>
+        <div class="jumbotron">
+            <h1 class="display-4">Hello, world!</h1>
+            <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+            <hr class="my-4">
+            <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+            <p class="lead">
+            <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+            </p>
         </div>
-        <div class="row">
-            <h2>Survey Questions</h2>
+        <div class="col-auto my-1">
+            <a class="btn btn-primary btn-lg" href="survey" role="button">Take the Quiz</a>
         </div>
-        
-        <form>
-            <div class="row">
-                <div class="col-auto my-1">
-                    <label class="mr-sm-2" for="inlineFormCustomSelect"><h4>About You</h4></label>
-                        <div class="form-group">
-                        <label for="name">Name (Required)</label>
-                        <input type="name" class="form-control" id="name">
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleInputPassword1">Link to photo image (Required)</label>
-                        <input type="url" class="form-control" id="photo">
-                    </div>
-                </div>
-            </div>
-        </form>
-        <form>
-            <div class="form-row">
-                <div class="col-auto my-1">
-                    <label class="mr-sm-2" for="inlineFormCustomSelect"><h4>Question 1</h4>You love waking up early with the birdies every morning.</label>
-                    <select class="custom-select custom-select-sm" id="q1">
-                        <option selected>Select an option</option>
-                        <option value="1">1 (Strongly Disagree)</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5 (Strongly Agree)</option>
-                    </select>
-                </div>
-            </div>
-
-            <div class="form-row align-items-center">
-                <div class="col-auto my-1">
-                    <label class="mr-sm-2" for="inlineFormCustomSelect"><h4>Question 2</h4>Generally speaking, you rely more on your experience than your imagination.</label>
-                    <select class="custom-select custom-select-sm" id="q2">
-                        <option selected>Select an option</option>
-                        <option value="1">1 (Strongly Disagree)</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5 (Strongly Agree)</option>
-                    </select>
-                </div>
-            </div>
-
-            <div class="form-row align-items-center">
-                <div class="col-auto my-1">
-                    <label class="mr-sm-2" for="inlineFormCustomSelect"><h4>Question 3</h4>You find it easy to stay relaxed and focused even when there is some pressure.</label>
-                    <select class="custom-select custom-select-sm" id="q3">
-                        <option selected>Select an option</option>
-                        <option value="1">1 (Strongly Disagree)</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5 (Strongly Agree)</option>
-                    </select>
-                </div>
-            </div>
-
-            <div class="form-row align-items-center">
-                <div class="col-auto my-1">
-                    <label class="mr-sm-2" for="inlineFormCustomSelect"><h4>Question 4</h4>You rarely do something just out of sheer curiosity.</label>
-                    <select class="custom-select custom-select-sm" id="q4">
-                        <option selected>Select an option</option>
-                        <option value="1">1 (Strongly Disagree)</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5 (Strongly Agree)</option>
-                    </select>
-                </div>
-            </div>
-
-            <div class="form-row align-items-center">
-                <div class="col-auto my-1">
-                    <label class="mr-sm-2" for="inlineFormCustomSelect"><h4>Question 5</h4>People can rarely upset you.</label>
-                    <select class="custom-select custom-select-sm" id="q5">
-                        <option selected>Select an option</option>
-                        <option value="1">1 (Strongly Disagree)</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5 (Strongly Agree)</option>
-                    </select>
-                </div>
-            </div>
-
-            <div class="form-row align-items-center">
-                <div class="col-auto my-1">
-                    <label class="mr-sm-2" for="inlineFormCustomSelect"><h4>Question 6</h4>It is often difficult for you to relate to other people’s feelings.</label>
-                    <select class="custom-select custom-select-sm" id="q6">
-                        <option selected>Select an option</option>
-                        <option value="1">1 (Strongly Disagree)</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5 (Strongly Agree)</option>
-                    </select>
-                </div>
-            </div>
-
-            <div class="form-row align-items-center">
-                <div class="col-auto my-1">
-                    <label class="mr-sm-2" for="inlineFormCustomSelect"><h4>Question 7</h4>In a discussion, truth should be more important than people’s sensitivities.</label>
-                    <select class="custom-select custom-select-sm" id="q7">
-                        <option selected>Select an option</option>
-                        <option value="1">1 (Strongly Disagree)</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5 (Strongly Agree)</option>
-                    </select>
-                </div>
-            </div>
-
-            <div class="form-row align-items-center">
-                <div class="col-auto my-1">
-                    <label class="mr-sm-2" for="inlineFormCustomSelect"><h4>Question 8</h4>You rarely get carried away by fantasies and ideas.</label>
-                    <select class="custom-select custom-select-sm" id="q8">
-                        <option selected>Select an option</option>
-                        <option value="1">1 (Strongly Disagree)</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5 (Strongly Agree)</option>
-                    </select>
-                </div>
-            </div>
-
-            <div class="form-row align-items-center">
-                <div class="col-auto my-1">
-                    <label class="mr-sm-2" for="inlineFormCustomSelect"><h4>Question 9</h4>You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</label>
-                    <select class="custom-select custom-select-sm" id="q9">
-                        <option selected>Select an option</option>
-                        <option value="1">1 (Strongly Disagree)</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5 (Strongly Agree)</option>
-                    </select>
-                </div>
-            </div>
-
-            <div class="form-row align-items-center">
-                <div class="col-auto my-1">
-                    <label class="mr-sm-2" for="inlineFormCustomSelect"><h4>Question 10</h4>You feel more energetic after spending time with a group of people.</label>
-                    <select class="custom-select custom-select-sm" id="q10">
-                        <option selected>Select an option</option>
-                        <option value="1">1 (Strongly Disagree)</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5 (Strongly Agree)</option>
-                    </select>
-                </div>
-            </div>
-
-
-            <div class="col-auto my-1">
-                <button type="submit" class="btn btn-primary">Submit</button>
-            </div>
-        </form>
     </div>
 
 
@@ -194,7 +36,6 @@
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-    <script type="text/javascript" src="survey.js"></script>
 </body>
 
 </html>

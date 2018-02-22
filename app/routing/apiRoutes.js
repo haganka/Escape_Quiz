@@ -1,8 +1,11 @@
 var path = require("path");
-var friendResults = require("../data/friends");
+var friendsArr = require("../data/friends");
 
 module.exports = function(app) {
 
+    app.get("api/friends", function(req, res) {
+        red.json(friendsArr);
+    })
 
     app.post("/api/answers", function(req, res) {
         var userVals = JSON.parse(req.body.scores);
@@ -17,23 +20,25 @@ module.exports = function(app) {
         var matchFour = 0;
 
         for (var i = 0; i < userNums.length; i++){
-            matchOne += Math.abs(friendResults[0].scores[i] - userNums[i]);
-            matchTwo += Math.abs(friendResults[1].scores[i] - userNums[i]);
-            matchThree += Math.abs(friendResults[2].scores[i] - userNums[i]);
-            matchFour += Math.abs(friendResults[3].scores[i] - userNums[i]);
+            matchOne += Math.abs(friendsArr[0].scores[i] - userNums[i]);
+            console.log("match1", matchOne);
+            matchTwo += Math.abs(friendsArr[1].scores[i] - userNums[i]);
+            console.log("match2", matchTwo);
+            matchThree += Math.abs(friendsArr[2].scores[i] - userNums[i]);
+            matchFour += Math.abs(friendsArr[3].scores[i] - userNums[i]);
         }
 
         var minDifference = Math.min(matchOne, matchTwo, matchThree, matchFour);
         var bestMatch;
 
         if(minDifference == matchOne){
-            bestMatch = friendsResults[0]
+            bestMatch = friendsArr[0]
         }else if(minDifference == matchTwo){
-            bestMatch = friendsResults[1]
+            bestMatch = friendsArr[1]
         }else if(minDifference == matchThree){
-            bestMatch = friendsResults[2]
-        }else if(minDifferent == matchFour){
-            bestMatch = friendResults[3]
+            bestMatch = friendsArr[2]
+        }else if(minDifference == matchFour){
+            bestMatch = friendsArr[3]
         };
 
         res.json(bestMatch);
