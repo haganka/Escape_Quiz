@@ -1,7 +1,7 @@
 var friendsArr = [
     {
     "name": "Alex",
-    "photo": "../images/alex.jpg",
+    "photo": "images/alex.jpg",
     "scores": [
         5,
         1,
@@ -17,7 +17,7 @@ var friendsArr = [
     },
     {
     "name": "Lisa",
-    "photo": "../images/lisa.png",
+    "photo": "images/lisa.png",
     "scores": [
         4,
         2,
