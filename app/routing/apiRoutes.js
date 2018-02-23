@@ -4,7 +4,7 @@ var friendsArr = require("../data/friends");
 module.exports = function(app) {
 
     app.get("api/friends", function(req, res) {
-        red.json(friendsArr);
+        res.json(friendsArr);
     })
 
     app.post("/api/answers", function(req, res) {
