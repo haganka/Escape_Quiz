@@ -7,25 +7,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+
 
     <title>Friend Finder</title>
 </head>
 
 <body>
+    <h1 class="test">Hello</h1>
     <div class="container">
-        <div class="jumbotron">
-            <h1 class="display-4">Hello, world!</h1>
-            <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+        <div class="jumbotron" id="bigBox">
+            <h1 class="display-4">Looking for your next Escape?</h1>
+            <p class="lead">Answer some personality questions in the Escape Quiz and we'll tell you where you are meant to set off to on your next vacation.</p>
             <hr class="my-4">
-            <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
             <p class="lead">
-            <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+            <a class="btn btn-primary btn-lg" href="survey" role="button">Take the quiz!</a>
             </p>
         </div>
-        <div class="col-auto my-1">
-            <a class="btn btn-primary btn-lg" href="survey" role="button">Take the Quiz</a>
+    </div>
+
+    <div class="container-fluid footer">
+        <div class="row footer-div">
+            <div class="col-md-12">
+                <a class="footLink" href="/api/friends" target="_blank">API Friends List</a>
+                <a class="footLink" href="https://github.com/haganka/Friend_Finder" target="_blank">GitHub Repo</a>
+            </div>
         </div>
     </div>
 
