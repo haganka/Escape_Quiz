@@ -32,10 +32,6 @@
                         <label for="name">Name (Required)</label>
                         <input type="name" class="form-control input" id="name">
                     </div>
-                    <div class="form-group">
-                        <label for="url">Link to photo image (Required)</label>
-                        <input type="url" class="form-control" id="photo">
-                    </div>
                 </div>
             </div>
         </form>
@@ -220,6 +216,15 @@
         </div>
     </div>
 
+    <div class="container-fluid footer">
+            <div class="row footer-div">
+                <div class="col-md-12">
+                    <a class="footLink" href="/api/friends" target="_blank">API Friends List</a>
+                    <a class="footLink" href="https://github.com/haganka/Friend_Finder" target="_blank">GitHub Repo</a>
+                </div>
+            </div>
+        </div>
+
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
@@ -267,7 +272,6 @@
 
             var userResults = {
                 name: $("#name").val().trim(),
-                photo: $("#photo").val().trim(),
                 scores: scoreString
             };
             console.log(userResults);
@@ -291,7 +295,6 @@
             });
 
                     $("#name").val("");
-                    $("#photo").val("");
                     $("#q2").val("");
                     $("#q1").val("");
                     $("#q3").val("");
