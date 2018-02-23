@@ -1,3 +1,22 @@
-#friend-photo {
-    max-width: 300px;
+#photo, img {
+    max-width: 350px;
+    display: inline-block;
+    margin: 0 auto;
+
+}
+
+#bigBox {
+    background-color: blue;
+}
+
+#quizHead {
+    margin-top: 20px;
+}
+
+h4 {
+    color: pink;
+}
+
+.test {
+    color: pink;
 }

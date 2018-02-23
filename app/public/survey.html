@@ -9,6 +9,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css"/>
 
     <title>Friend Finder</title>
 </head>
@@ -17,14 +18,11 @@
     <div class="container">
         <div class="row">
             <div class="header">
-                <h1>Welcome to Friend Finder</h1>
+                <h1 id="quizHead">Escape Quiz</h1>
+                <hr>
             </div>
         </div>
-        <div class="row">
-            <h2>Survey Questions</h2>
-        </div>
-
-        <form>
+        <form id="myForm">
             <div class="row">
                 <div class="col-auto my-1">
                     <label class="mr-sm-2" for="inlineFormCustomSelect">
@@ -45,7 +43,7 @@
             <div class="form-row">
                 <div class="col-auto my-1">
                     <label class="mr-sm-2" for="inlineFormCustomSelect">
-                        <h4>Question 1</h4>You are an early bird. Like waking up with the sun, early bird.</label>
+                        <h4>Question 1</h4>Food is an important factor in your travel decisions.</label>
                     <select class="custom-select custom-select-sm" id="q1">
                         <option selected>Select an option</option>
                         <option value="1">1 (Strongly Disagree)</option>
@@ -60,7 +58,7 @@
             <div class="form-row align-items-center">
                 <div class="col-auto my-1">
                     <label class="mr-sm-2" for="inlineFormCustomSelect">
-                        <h4>Question 2</h4>The first thing you do when you get home from work is pull on the sweatpants and crash on the couch.</label>
+                        <h4>Question 2</h4>Adventurous is a great way to describe you.</label>
                     <select class="custom-select custom-select-sm" id="q2">
                         <option selected>Select an option</option>
                         <option value="1">1 (Strongly Disagree)</option>
@@ -120,7 +118,7 @@
             <div class="form-row align-items-center">
                 <div class="col-auto my-1">
                     <label class="mr-sm-2" for="inlineFormCustomSelect">
-                        <h4>Question 6</h4>You consider yourself an indoor cat.</label>
+                        <h4>Question 6</h4>You genuinely enjoy exercise or physically challenging activities.</label>
                     <select class="custom-select custom-select-sm" id="q6">
                         <option selected>Select an option</option>
                         <option value="1">1 (Strongly Disagree)</option>
@@ -150,7 +148,7 @@
             <div class="form-row align-items-center">
                 <div class="col-auto my-1">
                     <label class="mr-sm-2" for="inlineFormCustomSelect">
-                        <h4>Question 8</h4>Every weekend I leave the bar at closing time. The occassional weeknight too...</label>
+                        <h4>Question 8</h4>You can count on one hand the amount of times you've stayed out past midnight this year.</label>
                     <select class="custom-select custom-select-sm" id="q8">
                         <option selected>Select an option</option>
                         <option value="1">1 (Strongly Disagree)</option>
@@ -165,7 +163,7 @@
             <div class="form-row align-items-center">
                 <div class="col-auto my-1">
                     <label class="mr-sm-2" for="inlineFormCustomSelect">
-                        <h4>Question 9</h4>There is no such thing as too much sun.</label>
+                        <h4>Question 9</h4>You can't handle the sun for too long.</label>
                     <select class="custom-select custom-select-sm" id="q9">
                         <option selected>Select an option</option>
                         <option value="1">1 (Strongly Disagree)</option>
@@ -210,11 +208,11 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <h1>Your new bestie is...</h1>
+                    <h3>Your vacation getaway is...</h3>
                     <h1 id="friend-name"></h1>
                     <br />
-                    <img class="img-responsive" id="friend-photo" alt="your new bestie" />
                 </div>
+                <div id="friend-photo"></div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                 </div>
@@ -232,6 +230,24 @@
     <script type="text/javascript">
         $("#submit").on("click", function (event) {
             event.preventDefault();
+            console.log("running")
+
+            // function validateForm() {
+
+            //     var responses = document.forms["myForm"]["custom-select"].value;
+            //     if (x == "") {
+            //         alert("Name must be filled out");
+            //         return false;
+            //     }else {
+                // var responses = $("#myForm")(".custom-select").val;
+                // console.log("responses", responses);
+                // if (x == "") {
+                //     alert("please fill out all forms");
+                //     return false;
+
+                // }else {
+
+
 
             var scores = [
                 $("#q1").val(),
@@ -260,13 +276,15 @@
 
 
             $.post("/api/answers", userResults)
+
+
                 .then(function (data) {
 
                     $('#myModal').modal('show');
                     $('#myModal').on('shown.bs.modal', function() {
                     $("#friend-name").html(data.name);
                     console.log(data.name)
-                    $("#friend-photo").attr("src", data.photo);
+                    $("#friend-photo").html('<img src="' + data.photo + '" + class="img-responsive" + id="photo"/>');
  
                     });
 
@@ -286,7 +304,10 @@
                     $("#q10").val("");
                     $("myModal").val("");
 
+            //     }
+            // }
         });
+
 
 //add buttons to bottom of page to friends list and add $.get ajax call to api/friends for json list
     </script>
