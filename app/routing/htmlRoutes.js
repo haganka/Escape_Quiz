@@ -1,5 +1,5 @@
 var path = require("path");
-var friends = require("../data/friends");
+var places = require("../data/friends");
 
 module.exports = function(app) {
 
@@ -12,7 +12,7 @@ module.exports = function(app) {
     });
 
     app.get("/api/friends", function(req, res) {
-        res.json(friends);
+        res.json(places);
     });
   
   

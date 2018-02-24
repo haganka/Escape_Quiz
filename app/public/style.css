@@ -1,24 +1,53 @@
+body {
+    background-color: rgb(42, 93, 96);
+    font-family: 'Dosis', sans-serif;
+}
+#quizHead {
+    font-family: 'Amatic SC', cursive;
+    padding-top: 75px;
+    font-size: 100px;
+    color: white;
+    padding-left: 20px;
+    float: left;
+}
+
+
+
+hr {
+    background-color: white;
+    height: 3px;
+}
+
 #photo, img {
     max-width: 350px;
     margin-left: 40px;
 
 }
 
-#bigBox {
-    /* background-color: blue; */
+.btn, #quizBtn {
+    background-color: rgb(42, 93, 96);
+    border: none;
+    color: white;
 }
 
-#quizHead {
-    margin-top: 20px;
+
+
+.btn:hover, .btn:focus, .btn:active, .btn:visited {
+    background-color: rgb(143, 178, 182);
+    color: white;
 }
+
+#bigBox {
+    background-color: rgb(186, 222, 234);
+    box-shadow: 10px 10px 3px rgb(143, 178, 182);
+    margin-top: 100px;
+}
+
 
 h4 {
-    color: pink;
+    color: rgb(22, 22, 22);
 }
 
-.test {
-    color: pink;
-}
 
 .footer {
     margin-top: 50px;
@@ -26,9 +55,80 @@ h4 {
 
 .footLink {
     margin-right: 10px;
-    font-size: 14px;
 }
 
-#q8, #q9, #q10 {
-    width: 50%;
+.quizBox {
+
+    border-radius: 5px;
+    background-color: rgb(186, 222, 234);
+    box-shadow: 10px 10px 3px rgb(143, 178, 182);
+    margin-bottom: 50px;
 }
+
+.custom-select {
+    position: absolute;
+    width: 90%;
+    background-color: rgb(143, 178, 182);
+    /* margin-left: 20px; */
+}
+
+.my-1 {
+    width: 100%;
+}
+
+.form-row {
+    margin-bottom: 50px;
+    margin-left: 20px;
+}
+
+#first {
+    margin-top: 20px;
+}
+
+#submit {
+    margin-left: 10px;
+    margin-bottom: 30px;
+}
+
+#nameHead {
+    color: white;
+}
+
+#name {
+    opacity: 0.7;
+    background-color: rgb(143, 178, 182);
+}
+
+#intro {
+    color: white;
+}
+
+.footer {
+    padding: 10px;
+    font-size: 13px;
+    margin-top: 50px;
+    bottom: 0;
+    z-index: 8;
+    vertical-align: middle;
+    /* position: absolute;
+    font-size: 14px; */
+}
+
+/* #q8, #q9, #q10 {
+    width: 100%;
+    height: calc(1.8125rem + 2px);
+    padding-top: .375rem;
+    padding-bottom: .375rem;
+    font-size: 75%;
+    display: inline-block;
+    width: 100%;
+    height: calc(2.25rem + 2px);
+    padding: .375rem 1.75rem .375rem .75rem;
+    line-height: 1.5;
+    color: #495057;
+    vertical-align: middle;
+    background: #fff;
+    background-size: 8px 10px;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+} */
