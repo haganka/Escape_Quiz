@@ -8,7 +8,7 @@ Choosing a vacation spot is tough! This app aids in the decision making process 
 You can view the app on Heroku! If you'd like to dig into the code, download the repository zip file and do an npm install to ensure you have all of the correct dependencies installed and are able to connect to a local host.
 
 ## Built With
-* [Bootstrap V4](https://getbootstrap.com/docs/4.0/getting-started/introduction/) - CSS framework
+* [Bootstrap V4](https://getbootstrap.com/docs/4.0/getting-started/introduction/) 
 * [jQuery API](http://api.jquery.com/)
 * [Node.js](https://nodejs.org/en/docs/)
 
@@ -30,4 +30,4 @@ Location images from [unsplash.com](https://unsplash.com)
 * Ski: Photo by asoggetti on Unsplash
 * Beach: Photo by Nikos Zacharoulis on Unsplash
 * Prague: Photo by Fredy Martinez on Unsplash
-Plane icon [Goodware Std](https://www.iconfinder.com/goodware)
+* Plane icon [Goodware Std](https://www.iconfinder.com/goodware)
