@@ -1,30 +1,124 @@
+body {
+    background-color: rgb(42, 93, 96);
+    font-family: 'Dosis', sans-serif;
+}
+#quizHead {
+    font-family: 'Amatic SC', cursive;
+    padding-top: 75px;
+    font-size: 100px;
+    color: white;
+    padding-left: 20px;
+    float: left;
+}
+
+#question {
+    font-size: 20px;
+}
+
+a, a:focus {
+    color: rgb(179, 193, 240);
+    margin-right: 10px;
+    font-size: 15px;
+}
+
+a:hover a:active, a:focus {
+    color: rgb(129, 154, 238);
+
+}
+
+.display-4 {
+    font-family: 'Amatic SC', cursive;
+    font-size: 80px;
+}
+
+hr {
+    background-color: white;
+    height: 3px;
+}
+
 #photo, img {
     max-width: 350px;
     margin-left: 40px;
 
 }
 
-#bigBox {
-    /* background-color: blue; */
+.btn, #quizBtn {
+    background-color: rgb(42, 93, 96);
+    border: none;
+    color: white;
 }
 
-#quizHead {
-    margin-top: 20px;
+
+.btn:hover, .btn:focus, .btn:active, .btn:visited {
+    background-color: rgb(143, 178, 182);
+    color: white;
+}
+
+#bigBox {
+    background-color: rgb(186, 222, 234);
+    box-shadow: 10px 10px 3px rgb(143, 178, 182);
+    margin-top: 100px;
 }
 
 h4 {
-    color: pink;
+    color: rgb(22, 22, 22);
 }
 
-.test {
-    color: pink;
+.quizBox {
+
+    border-radius: 5px;
+    background-color: rgb(186, 222, 234);
+    box-shadow: 10px 10px 3px rgb(143, 178, 182);
+    margin-bottom: 50px;
+}
+
+#globe {
+    float: right;
+    clear: both;
+    margin-top: 30px;
+}
+
+.custom-select {
+    position: absolute;
+    width: 90%;
+    background-color: rgb(143, 178, 182);
+}
+
+.my-1 {
+    width: 100%;
+}
+
+.form-row {
+    margin-bottom: 50px;
+    margin-left: 20px;
+}
+
+#first {
+    margin-top: 20px;
+}
+
+#submit {
+    margin-left: 10px;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+
+#name {
+    opacity: 0.7;
+    background-color: rgb(143, 178, 182);
+}
+
+#intro, #nameHead {
+    color: white;
+    font-size: 20px;
 }
 
 .footer {
+    padding: 10px;
     margin-top: 50px;
-}
+    bottom: 0;
+    z-index: 8;
+    vertical-align: middle;
 
-.footLink {
-    margin-right: 10px;
-    font-size: 14px;
 }

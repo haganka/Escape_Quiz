@@ -2,46 +2,54 @@
 <html lang="en">
 
 <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css"/>
+
+    <link rel="icon" href="images/globe.ico" type="image" sizes="24x24">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Dosis" rel="stylesheet">
 
     <title>Friend Finder</title>
 </head>
 
 <body>
     <div class="container">
-        <div class="row">
+        <!-- <div class="row">
             <div class="header">
-                <h1 id="quizHead">Escape Quiz</h1>
-                <hr>
+                <h1 id="quizHead">Escape Quiz<hr></h1>
             </div>
-        </div>
+        </div> -->
         <form id="myForm">
             <div class="row">
-                <div class="col-auto my-1">
+                <div class="col-sm-7 my-1">
+                        <div class="header">
+                            <h1 id="quizHead">Escape Quiz<hr></h1>
+                        </div>
                     <label class="mr-sm-2" for="inlineFormCustomSelect">
-                        <h4>About You</h4>
+                        <p id="intro">Answer the questions below to reveal the ideal getaway for you!</h4>
                     </label>
                     <div class="form-group">
-                        <label for="name">Name (Required)</label>
-                        <input type="name" class="form-control input" id="name">
+                        <label for="name" id="nameHead">Name (Required)</label>
+                        <input type="name" class="form-control input" id="name" required="required">
                     </div>
+                </div>
+                <div class-"col-sm-5">
+                    <img src="images/globe.png" alt="globe" id="globe">
                 </div>
             </div>
         </form>
         <form>
+            <div class="quizBox">
             <div class="form-row">
                 <div class="col-auto my-1">
                     <label class="mr-sm-2" for="inlineFormCustomSelect">
-                        <h4>Question 1</h4>Food is an important factor in your travel decisions.</label>
-                    <select class="custom-select custom-select-sm" id="q1">
-                        <option selected>Select an option</option>
+                        <h3 id="first">Question 1</h3>
+                        <p id="question">Food is an important factor in your travel decisions.</p></label><br/>
+                    <select class="custom-select custom-select-sm select" id="q1" required="required">
+                        <option value="" selected>Select an option</option>
                         <option value="1">1 (Strongly Disagree)</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -54,9 +62,10 @@
             <div class="form-row align-items-center">
                 <div class="col-auto my-1">
                     <label class="mr-sm-2" for="inlineFormCustomSelect">
-                        <h4>Question 2</h4>Adventurous is a great way to describe you.</label>
-                    <select class="custom-select custom-select-sm" id="q2">
-                        <option selected>Select an option</option>
+                        <h3>Question 2</h3>
+                        <p id="question">Adventurous is a great way to describe you.</p></label><br/>
+                    <select class="custom-select custom-select-sm select" id="q2">
+                        <option value="" selected>Select an option</option>
                         <option value="1">1 (Strongly Disagree)</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -69,9 +78,10 @@
             <div class="form-row align-items-center">
                 <div class="col-auto my-1">
                     <label class="mr-sm-2" for="inlineFormCustomSelect">
-                        <h4>Question 3</h4>You find it difficult to relax and feel like you always need to be doing something.</label>
-                    <select class="custom-select custom-select-sm" id="q3">
-                        <option selected>Select an option</option>
+                        <h3>Question 3</h3>
+                        <p id="question">You find it difficult to relax and feel like you always need to be doing something.</p></label><br/>
+                    <select class="custom-select custom-select-sm select" id="q3">
+                        <option value="" selected>Select an option</option>
                         <option value="1">1 (Strongly Disagree)</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -84,9 +94,10 @@
             <div class="form-row align-items-center">
                 <div class="col-auto my-1">
                     <label class="mr-sm-2" for="inlineFormCustomSelect">
-                        <h4>Question 4</h4>You appreciate the finer things in life.</label>
-                    <select class="custom-select custom-select-sm" id="q4">
-                        <option selected>Select an option</option>
+                        <h3>Question 4</h3>
+                        <p id="question">You appreciate the finer things in life.</p></label><br/>
+                    <select class="custom-select custom-select-sm select" id="q4">
+                        <option value="" selected>Select an option</option>
                         <option value="1">1 (Strongly Disagree)</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -99,9 +110,10 @@
             <div class="form-row align-items-center">
                 <div class="col-auto my-1">
                     <label class="mr-sm-2" for="inlineFormCustomSelect">
-                        <h4>Question 5</h4>You welcome wintery weather.</label>
-                    <select class="custom-select custom-select-sm" id="q5">
-                        <option selected>Select an option</option>
+                        <h3>Question 5</h3>
+                        <p id="question">You welcome wintery weather.</p></label><br/>
+                    <select class="custom-select custom-select-sm select" id="q5">
+                        <option value="" selected>Select an option</option>
                         <option value="1">1 (Strongly Disagree)</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -114,9 +126,10 @@
             <div class="form-row align-items-center">
                 <div class="col-auto my-1">
                     <label class="mr-sm-2" for="inlineFormCustomSelect">
-                        <h4>Question 6</h4>You genuinely enjoy exercise or physically challenging activities.</label>
-                    <select class="custom-select custom-select-sm" id="q6">
-                        <option selected>Select an option</option>
+                        <h3>Question 6</h3>
+                        <p id="question">You genuinely enjoy exercise or physically challenging activities.</p></label><br/>
+                    <select class="custom-select custom-select-sm select" id="q6">
+                        <option value="" selected>Select an option</option>
                         <option value="1">1 (Strongly Disagree)</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -129,9 +142,10 @@
             <div class="form-row align-items-center">
                 <div class="col-auto my-1">
                     <label class="mr-sm-2" for="inlineFormCustomSelect">
-                        <h4>Question 7</h4>You are a nature freak, tree hugger, animal lover or all of the above.</label>
-                    <select class="custom-select custom-select-sm" id="q7">
-                        <option selected>Select an option</option>
+                        <h3>Question 7</h3>
+                        <p id="question">You are a nature freak, tree hugger, animal lover or all of the above.</p></label><br/>
+                    <select class="custom-select custom-select-sm select" id="q7">
+                        <option value="" selected>Select an option</option>
                         <option value="1">1 (Strongly Disagree)</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -144,9 +158,10 @@
             <div class="form-row align-items-center">
                 <div class="col-auto my-1">
                     <label class="mr-sm-2" for="inlineFormCustomSelect">
-                        <h4>Question 8</h4>You can count on one hand the amount of times you've stayed out past midnight this year.</label>
-                    <select class="custom-select custom-select-sm" id="q8">
-                        <option selected>Select an option</option>
+                        <h3>Question 8</h3>
+                        <p id="question">You can count on one hand the amount of times you've stayed out past midnight this year.</p></label><br/>
+                    <select class="custom-select custom-select-sm select" id="q8">
+                        <option value="" selected>Select an option</option>
                         <option value="1">1 (Strongly Disagree)</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -159,9 +174,10 @@
             <div class="form-row align-items-center">
                 <div class="col-auto my-1">
                     <label class="mr-sm-2" for="inlineFormCustomSelect">
-                        <h4>Question 9</h4>You can't handle the sun for too long.</label>
-                    <select class="custom-select custom-select-sm" id="q9">
-                        <option selected>Select an option</option>
+                        <h3>Question 9</h3>
+                        <p id="question">You can't handle the sun for too long.</p></label><br/>
+                    <select class="custom-select custom-select-sm select" id="q9">
+                        <option value="" selected>Select an option</option>
                         <option value="1">1 (Strongly Disagree)</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -174,9 +190,10 @@
             <div class="form-row align-items-center">
                 <div class="col-auto my-1">
                     <label class="mr-sm-2" for="inlineFormCustomSelect">
-                        <h4>Question 10</h4>You consider yourself an explorer.</label>
-                    <select class="custom-select custom-select-sm" id="q10">
-                        <option selected>Select an option</option>
+                        <h3>Question 10</h3>
+                        <p id="question">You consider yourself an explorer.</p></label><br/>
+                    <select class="custom-select custom-select-sm select" id="q10">
+                        <option value="" selected>Select an option</option>
                         <option value="1">1 (Strongly Disagree)</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -188,12 +205,12 @@
 
 
             <div class="col-auto my-1">
-                <button type="submit" class="btn btn-primary" id="submit">Submit</button>
+                <button type="submit" class="btn" id="submit">Submit</button>
             </div>
         </form>
     </div>
+</div>
 
-    <!-- Modal -->
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -204,8 +221,9 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <h3>Your vacation getaway is...</h3>
+                    <h3 id="username"></h3>
                     <h1 id="friend-name"></h1>
+                    <p id="destination-info"></p>
                     <br />
                 </div>
                 <div id="friend-photo"></div>
@@ -216,14 +234,33 @@
         </div>
     </div>
 
-    <div class="container-fluid footer">
-        <div class="row footer-div">
-            <div class="col-md-12">
-                <a class="footLink" href="/api/friends" target="_blank">API Friends List</a>
-                <a class="footLink" href="https://github.com/haganka/Friend_Finder" target="_blank">GitHub Repo</a>
+    <div class="modal fade" id="error-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="no-result">
+                        Oops!
+                    </h3>
+                </div>
+                <div class="modal-body">
+                    <h5>Looks like you may have forgotten something. Please complete all fields in order to get your escape.</h4>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary text-center" data-dismiss="modal">Close</button>
+                </div>
             </div>
         </div>
     </div>
+    </div>
+
+    <div class="container">
+            <div class="row">
+                <div class="col-md-12 footer">
+                    <a class="footLink" href="/api/places" target="_blank">API Places List</a>
+                    <a class="footLink" href="https://github.com/haganka/Friend_Finder" target="_blank">GitHub Repo</a>
+                </div>
+            </div>
+        </div>
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
@@ -235,37 +272,58 @@
     <script type="text/javascript">
         $("#submit").on("click", function (event) {
             event.preventDefault();
-            console.log("running")
 
-            // function validateForm() {
+            var formValidation = function(){
 
-            //     var responses = document.forms["myForm"]["custom-select"].value;
-            //     if (x == "") {
-            //         alert("Name must be filled out");
-            //         return false;
-            //     }else {
-                // var responses = $("#myForm")(".custom-select").val;
-                // console.log("responses", responses);
-                // if (x == "") {
-                //     alert("please fill out all forms");
-                //     return false;
+                var valid = true;
+                $(".select").each(function(){
+                    if ($(this).val() === ""){
+                        valid = false;
 
-                // }else {
+                    }
+                });
+
+                $(".select").each(function(){
+                    if ($(this).val() === null){
+                        valid = false;
+
+                    }
+                });
+
+                $("#name").each(function() {
+                    if( $(this).val() === ""){
+                        valid = false
+
+                    }
+                });
+
+            return valid;
+
+            }
+
+            formValidation();
+
+            if (formValidation() === false){
+                $('#error-modal').modal('show');
+            };
 
 
-
-            var scores = [
-                $("#q1").val(),
-                $("#q2").val(),
-                $("#q3").val(),
-                $("#q4").val(),
-                $("#q5").val(),
-                $("#q6").val(),
-                $("#q7").val(),
-                $("#q8").val(),
-                $("#q9").val(),
-                $("#q10").val()
-            ]
+            if (formValidation() === true){
+                
+                var user = $("#name").val();
+                var scores = [
+                    $("#q1").val(),
+                    $("#q2").val(),
+                    $("#q3").val(),
+                    $("#q4").val(),
+                    $("#q5").val(),
+                    $("#q6").val(),
+                    $("#q7").val(),
+                    $("#q8").val(),
+                    $("#q9").val(),
+                    $("#q10").val()
+                ]
+            }
 
 
             var scoreString = JSON.stringify(scores);
@@ -280,14 +338,12 @@
 
 
             $.post("/api/answers", userResults)
-
-
                 .then(function (data) {
-
                     $('#myModal').modal('show');
                     $('#myModal').on('shown.bs.modal', function() {
+                    $("#username").text(user + " , your perfect escape is...")
                     $("#friend-name").html(data.name);
-                    console.log(data.name)
+                    $("#destination-info").text(data.description);
                     $("#friend-photo").html('<img src="' + data.photo + '" + class="img-responsive" + id="photo"/>');
  
                     });
@@ -295,24 +351,22 @@
             });
 
                     $("#name").val("");
-                    $("#q2").val("");
-                    $("#q1").val("");
-                    $("#q3").val("");
-                    $("#q4").val("");
-                    $("#q5").val("");
-                    $("#q6").val("");
-                    $("#q7").val("");
-                    $("#q8").val("");
-                    $("#q9").val("");
-                    $("#q10").val("");
+                    $("#q1").val("Select an option");
+                    $("#q2").val("Select an option");
+                    $("#q3").val("Select an option");
+                    $("#q4").val("Select an option");
+                    $("#q5").val("Select an option");
+                    $("#q6").val("Select an option");
+                    $("#q7").val("Select an option");
+                    $("#q8").val("Select an option");
+                    $("#q9").val("Select an option");
+                    $("#q10").val("Select an option");
                     $("myModal").val("");
 
-            //     }
-            // }
+
+
         });
 
-
-//add buttons to bottom of page to friends list and add $.get ajax call to api/friends for json list
     </script>
 
 </body>
