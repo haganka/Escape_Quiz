@@ -30,4 +30,4 @@ Location images from [unsplash.com](https://unsplash.com)
 * Ski: Photo by asoggetti on Unsplash
 * Beach: Photo by Nikos Zacharoulis on Unsplash
 * Prague: Photo by Fredy Martinez on Unsplash
-* Plane icon [Goodware Std](https://www.iconfinder.com/goodware)
+* Globe [Elizabeth Arostegui](https://www.iconfinder.com/goodware)
