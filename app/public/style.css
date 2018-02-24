@@ -11,7 +11,25 @@ body {
     float: left;
 }
 
+#question {
+    font-size: 20px;
+}
 
+a, a:focus {
+    color: rgb(179, 193, 240);
+    margin-right: 10px;
+    font-size: 15px;
+}
+
+a:hover a:active, a:focus {
+    color: rgb(129, 154, 238);
+
+}
+
+.display-4 {
+    font-family: 'Amatic SC', cursive;
+    font-size: 80px;
+}
 
 hr {
     background-color: white;
@@ -31,7 +49,6 @@ hr {
 }
 
 
-
 .btn:hover, .btn:focus, .btn:active, .btn:visited {
     background-color: rgb(143, 178, 182);
     color: white;
@@ -43,18 +60,8 @@ hr {
     margin-top: 100px;
 }
 
-
 h4 {
     color: rgb(22, 22, 22);
-}
-
-
-.footer {
-    margin-top: 50px;
-}
-
-.footLink {
-    margin-right: 10px;
 }
 
 .quizBox {
@@ -65,11 +72,16 @@ h4 {
     margin-bottom: 50px;
 }
 
+#globe {
+    float: right;
+    clear: both;
+    margin-top: 30px;
+}
+
 .custom-select {
     position: absolute;
     width: 90%;
     background-color: rgb(143, 178, 182);
-    /* margin-left: 20px; */
 }
 
 .my-1 {
@@ -88,47 +100,25 @@ h4 {
 #submit {
     margin-left: 10px;
     margin-bottom: 30px;
+    font-size: 20px;
 }
 
-#nameHead {
-    color: white;
-}
 
 #name {
     opacity: 0.7;
     background-color: rgb(143, 178, 182);
 }
 
-#intro {
+#intro, #nameHead {
     color: white;
+    font-size: 20px;
 }
 
 .footer {
     padding: 10px;
-    font-size: 13px;
     margin-top: 50px;
     bottom: 0;
     z-index: 8;
     vertical-align: middle;
-    /* position: absolute;
-    font-size: 14px; */
-}
 
-/* #q8, #q9, #q10 {
-    width: 100%;
-    height: calc(1.8125rem + 2px);
-    padding-top: .375rem;
-    padding-bottom: .375rem;
-    font-size: 75%;
-    display: inline-block;
-    width: 100%;
-    height: calc(2.25rem + 2px);
-    padding: .375rem 1.75rem .375rem .75rem;
-    line-height: 1.5;
-    color: #495057;
-    vertical-align: middle;
-    background: #fff;
-    background-size: 8px 10px;
-    border: 1px solid #ced4da;
-    border-radius: .25rem;
-} */
+}

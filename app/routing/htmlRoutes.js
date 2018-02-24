@@ -1,5 +1,5 @@
 var path = require("path");
-var places = require("../data/friends");
+var places = require("../data/places");
 
 module.exports = function(app) {
 
@@ -11,7 +11,7 @@ module.exports = function(app) {
       res.sendFile(path.join(__dirname, "../public/home.html"));
     });
 
-    app.get("/api/friends", function(req, res) {
+    app.get("/api/places", function(req, res) {
         res.json(places);
     });
   

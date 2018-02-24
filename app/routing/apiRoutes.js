@@ -1,9 +1,9 @@
 var path = require("path");
-var placesArr = require("../data/friends");
+var placesArr = require("../data/places");
 
 module.exports = function(app) {
 
-    app.get("api/friends", function(req, res) {
+    app.get("api/places", function(req, res) {
         res.json(placesArr);
     })
 

@@ -9,7 +9,7 @@
         crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css"/>
 
-    <link rel="icon" href="images/plane2.ico" type="image" sizes="24x24">
+    <link rel="icon" href="images/globe.ico" type="image" sizes="24x24">
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Dosis" rel="stylesheet">
 
     <title>Friend Finder</title>
@@ -17,22 +17,27 @@
 
 <body>
     <div class="container">
-        <div class="row">
+        <!-- <div class="row">
             <div class="header">
                 <h1 id="quizHead">Escape Quiz<hr></h1>
-
             </div>
-        </div>
+        </div> -->
         <form id="myForm">
             <div class="row">
-                <div class="col-auto my-1">
+                <div class="col-sm-7 my-1">
+                        <div class="header">
+                            <h1 id="quizHead">Escape Quiz<hr></h1>
+                        </div>
                     <label class="mr-sm-2" for="inlineFormCustomSelect">
-                        <p id="intro">Answer the questions below to reveal the ideal getaway for you.</h4>
+                        <p id="intro">Answer the questions below to reveal the ideal getaway for you!</h4>
                     </label>
                     <div class="form-group">
                         <label for="name" id="nameHead">Name (Required)</label>
                         <input type="name" class="form-control input" id="name" required="required">
                     </div>
+                </div>
+                <div class-"col-sm-5">
+                    <img src="images/globe.png" alt="globe" id="globe">
                 </div>
             </div>
         </form>
@@ -41,7 +46,8 @@
             <div class="form-row">
                 <div class="col-auto my-1">
                     <label class="mr-sm-2" for="inlineFormCustomSelect">
-                        <h4 id="first">Question 1</h4>Food is an important factor in your travel decisions.</label><br/>
+                        <h3 id="first">Question 1</h3>
+                        <p id="question">Food is an important factor in your travel decisions.</p></label><br/>
                     <select class="custom-select custom-select-sm select" id="q1" required="required">
                         <option value="" selected>Select an option</option>
                         <option value="1">1 (Strongly Disagree)</option>
@@ -56,7 +62,8 @@
             <div class="form-row align-items-center">
                 <div class="col-auto my-1">
                     <label class="mr-sm-2" for="inlineFormCustomSelect">
-                        <h4>Question 2</h4>Adventurous is a great way to describe you.</label><br/>
+                        <h3>Question 2</h3>
+                        <p id="question">Adventurous is a great way to describe you.</p></label><br/>
                     <select class="custom-select custom-select-sm select" id="q2">
                         <option value="" selected>Select an option</option>
                         <option value="1">1 (Strongly Disagree)</option>
@@ -71,7 +78,8 @@
             <div class="form-row align-items-center">
                 <div class="col-auto my-1">
                     <label class="mr-sm-2" for="inlineFormCustomSelect">
-                        <h4>Question 3</h4>You find it difficult to relax and feel like you always need to be doing something.</label><br/>
+                        <h3>Question 3</h3>
+                        <p id="question">You find it difficult to relax and feel like you always need to be doing something.</p></label><br/>
                     <select class="custom-select custom-select-sm select" id="q3">
                         <option value="" selected>Select an option</option>
                         <option value="1">1 (Strongly Disagree)</option>
@@ -86,7 +94,8 @@
             <div class="form-row align-items-center">
                 <div class="col-auto my-1">
                     <label class="mr-sm-2" for="inlineFormCustomSelect">
-                        <h4>Question 4</h4>You appreciate the finer things in life.</label><br/>
+                        <h3>Question 4</h3>
+                        <p id="question">You appreciate the finer things in life.</p></label><br/>
                     <select class="custom-select custom-select-sm select" id="q4">
                         <option value="" selected>Select an option</option>
                         <option value="1">1 (Strongly Disagree)</option>
@@ -101,7 +110,8 @@
             <div class="form-row align-items-center">
                 <div class="col-auto my-1">
                     <label class="mr-sm-2" for="inlineFormCustomSelect">
-                        <h4>Question 5</h4>You welcome wintery weather.</label><br/>
+                        <h3>Question 5</h3>
+                        <p id="question">You welcome wintery weather.</p></label><br/>
                     <select class="custom-select custom-select-sm select" id="q5">
                         <option value="" selected>Select an option</option>
                         <option value="1">1 (Strongly Disagree)</option>
@@ -116,7 +126,8 @@
             <div class="form-row align-items-center">
                 <div class="col-auto my-1">
                     <label class="mr-sm-2" for="inlineFormCustomSelect">
-                        <h4>Question 6</h4>You genuinely enjoy exercise or physically challenging activities.</label><br/>
+                        <h3>Question 6</h3>
+                        <p id="question">You genuinely enjoy exercise or physically challenging activities.</p></label><br/>
                     <select class="custom-select custom-select-sm select" id="q6">
                         <option value="" selected>Select an option</option>
                         <option value="1">1 (Strongly Disagree)</option>
@@ -131,7 +142,8 @@
             <div class="form-row align-items-center">
                 <div class="col-auto my-1">
                     <label class="mr-sm-2" for="inlineFormCustomSelect">
-                        <h4>Question 7</h4>You are a nature freak, tree hugger, animal lover or all of the above.</label><br/>
+                        <h3>Question 7</h3>
+                        <p id="question">You are a nature freak, tree hugger, animal lover or all of the above.</p></label><br/>
                     <select class="custom-select custom-select-sm select" id="q7">
                         <option value="" selected>Select an option</option>
                         <option value="1">1 (Strongly Disagree)</option>
@@ -146,7 +158,8 @@
             <div class="form-row align-items-center">
                 <div class="col-auto my-1">
                     <label class="mr-sm-2" for="inlineFormCustomSelect">
-                        <h4>Question 8</h4>You can count on one hand the amount of times you've stayed out past midnight this year.</label><br/>
+                        <h3>Question 8</h3>
+                        <p id="question">You can count on one hand the amount of times you've stayed out past midnight this year.</p></label><br/>
                     <select class="custom-select custom-select-sm select" id="q8">
                         <option value="" selected>Select an option</option>
                         <option value="1">1 (Strongly Disagree)</option>
@@ -161,7 +174,8 @@
             <div class="form-row align-items-center">
                 <div class="col-auto my-1">
                     <label class="mr-sm-2" for="inlineFormCustomSelect">
-                        <h4>Question 9</h4>You can't handle the sun for too long.</label><br/>
+                        <h3>Question 9</h3>
+                        <p id="question">You can't handle the sun for too long.</p></label><br/>
                     <select class="custom-select custom-select-sm select" id="q9">
                         <option value="" selected>Select an option</option>
                         <option value="1">1 (Strongly Disagree)</option>
@@ -176,7 +190,8 @@
             <div class="form-row align-items-center">
                 <div class="col-auto my-1">
                     <label class="mr-sm-2" for="inlineFormCustomSelect">
-                        <h4>Question 10</h4>You consider yourself an explorer.</label><br/>
+                        <h3>Question 10</h3>
+                        <p id="question">You consider yourself an explorer.</p></label><br/>
                     <select class="custom-select custom-select-sm select" id="q10">
                         <option value="" selected>Select an option</option>
                         <option value="1">1 (Strongly Disagree)</option>
@@ -241,7 +256,7 @@
     <div class="container">
             <div class="row">
                 <div class="col-md-12 footer">
-                    <a class="footLink" href="/api/friends" target="_blank">API Friends List</a>
+                    <a class="footLink" href="/api/places" target="_blank">API Places List</a>
                     <a class="footLink" href="https://github.com/haganka/Friend_Finder" target="_blank">GitHub Repo</a>
                 </div>
             </div>

@@ -52,7 +52,7 @@ var placesArr = [
     },
     {
         "name": "A lounge on the beach!",
-        "description": "Whether you're beat from work and need to get away or you'd just like to escape from some frigid temps, a beach vacation is best for you. Mexico? Bahamas? Wherever you decide, grab a margarita and park it in the sand for a bit."
+        "description": "Whether you're beat from work and need to get away or you'd just like to escape from some frigid temps, a beach vacation is best for you. Mexico? Bahamas? Wherever you decide, grab a margarita and park it in the sand for a bit.",
         "photo": "/images/beach.jpg",
         "scores": [
             2,
