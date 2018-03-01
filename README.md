@@ -1,5 +1,5 @@
 # The Escape Quiz
-The Escape quiz take users through a series of questionst to help determine the best place for their next vacation.
+The Escape quiz take users through a series of questions to help determine the best place for their next vacation.
 
 ## Purpose
 Choosing a vacation spot is tough! This app aids in the decision making process by asking a series of personality questions that determine a recommended trip specifically for you.
