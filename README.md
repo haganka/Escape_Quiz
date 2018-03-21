@@ -1,5 +1,5 @@
 # The Escape Quiz
-The Escape quiz take users through a series of questionst to help determine the best place for their next vacation.
+The Escape quiz take users through a series of questions to help determine the best place for their next vacation.
 
 ## Purpose
 Choosing a vacation spot is tough! This app aids in the decision making process by asking a series of personality questions that determine a recommended trip specifically for you.
@@ -16,7 +16,8 @@ You can view the app on Heroku! If you'd like to dig into the code, download the
 ## Future Ideas
 Future enhancements to the site could include:
 * Adding additional locations to the array
-* Switching up the questions a bit and making multiple choice answers to be even more specific. The logic will ultimately need to change as well as it's based on a numerical difference in user results and location results at the moment.
+* Switching up the questions a bit to make multiple choice answers that are even more specific
+* Showing the questions one by one with the ability to click through them rather than all on one page
 
 ## Collaboration
 Please feel free to collaborate! I hope to pick this back up in the near future to work through the ideas listed out above. If you have any thoughts to share or are interested in collaborating, feel free to reach out.
@@ -30,4 +31,4 @@ Location images from [unsplash.com](https://unsplash.com)
 * Ski: Photo by asoggetti on Unsplash
 * Beach: Photo by Nikos Zacharoulis on Unsplash
 * Prague: Photo by Fredy Martinez on Unsplash
-* Plane icon [Goodware Std](https://www.iconfinder.com/goodware)
+* Globe [Elizabeth Arostegui](https://www.iconfinder.com/goodware)
